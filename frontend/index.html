@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinTrack - Розумний трекінг фінансів</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a class="navbar__logo" href="index.html" aria-label="FinTrack">
+      <span class="navbar__logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;stroke:var(--accent)">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+      </span>
+      FinTrack
+    </a>
+    <div class="navbar__actions">
+      <button class="btn-ghost" type="button" data-auth-target="login">Увійти</button>
+      <button class="btn-primary" type="button" data-auth-target="register">Реєстрація</button>
+    </div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Відкрити меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="navbar__mobile" id="mobileMenu">
+    <button class="btn-ghost" type="button" data-auth-target="login">Увійти</button>
+    <button class="btn-primary" type="button" data-auth-target="register">Реєстрація</button>
+  </div>
+
+  <section class="hero">
+    <span class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      Розумний трекінг фінансів
+    </span>
+    <h1 class="hero__title">Контролюй свої<br /><span class="accent">фінанси</span> легко</h1>
+    <p class="hero__sub">
+      Відстежуй доходи, витрати та заощадження в одному місці.
+      Простий та зручний інструмент для повного контролю над фінансами.
+    </p>
+    <div class="hero__cta">
+      <button class="btn-cta" type="button" data-auth-target="register">
+        Почати безкоштовно
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="cards">
+      <div class="card hover-lift hover-icon-scale">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+        <h3 class="card__title">Аналітика</h3>
+        <p class="card__text">Детальні графіки та звіти про твої фінанси в реальному часі.</p>
+      </div>
+      <div class="card hover-lift hover-icon-scale">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <h3 class="card__title">Безпека</h3>
+        <p class="card__text">Твої дані надійно захищені та доступні лише тобі.</p>
+      </div>
+      <div class="card hover-lift hover-icon-scale">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <h3 class="card__title">Швидкість</h3>
+        <p class="card__text">Додавай транзакції за секунди без зайвих кроків.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a class="footer__logo" href="index.html" aria-label="FinTrack">
+      <span class="footer__logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;stroke:var(--accent)">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+      </span>
+      FinTrack
+    </a>
+    <p class="footer__copy">© 2026 FinTrack. Усі права захищені.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

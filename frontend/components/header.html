@@ -1,0 +1,40 @@
+<!--
+  ──────────────────────────────────────────
+  components/header.html
+  Reusable navbar snippet — paste inside <body>
+  Requires: css/variables.css, css/base.css, css/navbar.css
+            js/navbar.js
+  ──────────────────────────────────────────
+-->
+
+<nav class="navbar" id="navbar">
+
+  <a href="index.html" class="navbar__logo">
+    <span class="navbar__logo-icon">
+      <!-- Chart icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           style="width:16px;height:16px;stroke:var(--accent)">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+      </svg>
+    </span>
+    FinTrack
+  </a>
+
+  <div class="navbar__actions">
+    <button class="btn-ghost">Увійти</button>
+    <button class="btn-primary">Реєстрація</button>
+  </div>
+
+  <button class="navbar__hamburger" id="hamburger" aria-label="Відкрити меню">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</nav>
+
+<div class="navbar__mobile" id="mobileMenu">
+  <button class="btn-ghost">Увійти</button>
+  <button class="btn-primary">Реєстрація</button>
+</div>
